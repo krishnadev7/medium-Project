@@ -3,12 +3,12 @@ import { Quote } from "../components/Quote"
 
 function Signup() {
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-1 lg:grid-cols-2">
         <div>
-            <Auth/>
+            <Auth type="signup"/>
         </div>
-        <div className="invisible lg:visible">
-        <Quote/>
+        <div className="none lg:block">
+        <Quote type="signup"/>
         </div>
     </div>
   )
